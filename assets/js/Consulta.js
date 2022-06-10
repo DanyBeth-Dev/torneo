@@ -1,7 +1,7 @@
 //1. Para hacer la consulta asíncrona del archivo json:
 
 let personajes = ( () => {
-    const url = "http://localhost:5500/dbz.json"; //levantar según el puerto
+    const url = `${baseurl}/dbz.json`; //levantar según el puerto
     const getData = async () => {
         const res = await fetch(url)
         const data = await res.json()
