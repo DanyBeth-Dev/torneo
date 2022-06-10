@@ -1,9 +1,9 @@
-import Personajes from "./Consulta.js";
+import characters from "./Consulta.js";
 
 //2.Acá se genera la interacción del botón "ver imágenes"
 
 document.getElementById("buttonImages").addEventListener("click", async() => {
-    const {personajes} = await Personajes.getData();
+    const {personajes} = await characters.getData();
     console.log(personajes);
     const pj = document.getElementById("nombre").value;
     const imagenesPjTemplate = personajes
