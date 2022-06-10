@@ -1,7 +1,7 @@
 //1. Para hacer la consulta asíncrona del archivo json:
 
-let personajes = ( () => {
-    const url = `torneo/dbz.json`; //levantar según el puerto
+let Personajes = ( () => {
+    const url = "/assets/dbz.json"; //levantar según el puerto
     const getData = async () => {
         const res = await fetch(url)
         const data = await res.json()
@@ -10,4 +10,4 @@ let personajes = ( () => {
     return {getData}; //con esto se retorna dentro de un objeto el método getData
 } )();
 
-export default personajes;
+export default Personajes;
