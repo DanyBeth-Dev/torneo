@@ -1,5 +1,5 @@
 let characters = ( () => {
-    const url = "./dbz.json"; //levantar según el puerto
+    const url = "./assets/js/dbz.json"; //levantar según el puerto
     const getData = async () => {
         const res = await fetch(url)
         const data = await res.json()
