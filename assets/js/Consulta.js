@@ -1,5 +1,3 @@
-//1. Para hacer la consulta asíncrona del archivo json:
-
 let characters = ( () => {
     const url = "/assets/dbz.json"; //levantar según el puerto
     const getData = async () => {
@@ -7,7 +5,7 @@ let characters = ( () => {
         const data = await res.json()
         return data
     }
-    return {getData}; //con esto se retorna dentro de un objeto el método getData
+    return {getData};
 } )();
 
 export default characters;

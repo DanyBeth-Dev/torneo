@@ -1,7 +1,5 @@
 import Personaje from "./Personaje.js"
 
-//este archivo es el correspondiente a las subclases.
-
 class Saiyajin extends Personaje{
     constructor(nombre, img, poder, raza){
         super(nombre, img, poder, raza)

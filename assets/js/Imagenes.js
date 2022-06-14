@@ -1,7 +1,5 @@
 import characters from "./Consulta.js";
 
-//2.Acá se genera la interacción del botón "ver imágenes"
-
 document.getElementById("buttonImages").addEventListener("click", async() => {
     const {personajes} = await characters.getData();
     console.log(personajes);
@@ -21,4 +19,3 @@ document.getElementById("buttonImages").addEventListener("click", async() => {
         });
     });
 });
-
